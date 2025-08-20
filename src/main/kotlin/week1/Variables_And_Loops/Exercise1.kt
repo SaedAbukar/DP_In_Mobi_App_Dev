@@ -1,4 +1,4 @@
-package Week1
+package week1.Variables_And_Loops
 import kotlin.math.max
 import kotlin.math.min
 

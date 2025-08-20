@@ -1,4 +1,4 @@
-package Week1
+package week1.Variables_And_Loops
 
 fun main() {
     /*val numbers: MutableSet<Int> = mutableSetOf()
@@ -7,12 +7,14 @@ fun main() {
         numbers.add(number)
     }
     println(numbers.sorted())*/
+    val lottonums: Set<Int> = setOf(1,2,3,4,5,6,7)
     val nums1: MutableSet<Int> = mutableSetOf(1,2,3,4,5,6,7,8,9,10) // false
     val nums2: MutableList<Int> = mutableListOf(1,2,3,4,5,6,7) // true
     val nums3: Set<Int> = setOf(1,2,3,4,5,6) // false
     val nums4: List<Int> = listOf(1,2,3,4,5,6,41) // false
     val nums5: MutableSet<Int> = mutableSetOf(0,1,2,3,4,5,6) // false
     val nums6: Set<Int> = setOf(1,2,3,4,5,6,7) // true
+    nums6.intersect(nums1)
 
     println(isLegalLottoNumbers(nums1))
     println(isLegalLottoNumbers(nums2))
