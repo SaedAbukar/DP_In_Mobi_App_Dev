@@ -55,7 +55,9 @@ fun main() {
     println("Minumum, maximum and average of all grades in this major ${major.stats()}")
 }
 
-open class Human(val name: String, var age: Int) {
+open class Human(val name: String, initialAge: Int) {
+    var age = initialAge
+        private set
     fun getOlder() {
         ++age
     }
