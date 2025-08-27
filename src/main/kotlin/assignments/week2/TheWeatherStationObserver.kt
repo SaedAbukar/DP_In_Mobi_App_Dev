@@ -40,7 +40,6 @@ class CurrentConditionsDisplay : Observer{
     var temperature: Float? = null
     var humidity: Float? = null
     fun display() {
-        // TODO: Print the current temperature and humidity.
         println("CurrentConditionsDisplay: Current condition: ${temperature?: "N/A"}C and ${humidity?: "N/A"}% humidity")
     }
 
