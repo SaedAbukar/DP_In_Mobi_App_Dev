@@ -7,6 +7,7 @@ class FractionMutableTest{
     @Test
     fun testCons() {
         val a = FractionMutable(2,4,-1)
+        println(a)
         assert(a.toString() == "-1/2")
     }
     @Test
@@ -18,12 +19,14 @@ class FractionMutableTest{
     fun negate() {
         val a = FractionMutable(1,2, -1)
         a.negate()
+        println(a)
         assert(a.toString() == "1/2")
     }
     @Test
     fun addPos1() {
         val a = FractionMutable(1,2)
         a.add(FractionMutable(1,3))
+        println(a)
         assert(a.toString() == "5/6")
     }
     @Test
