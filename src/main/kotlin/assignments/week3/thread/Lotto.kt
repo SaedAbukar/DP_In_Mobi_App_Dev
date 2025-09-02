@@ -24,13 +24,6 @@ class Lotto {
         guesses++
         writeLock.unlock()
     }
-
-    fun addToMap(other: Collection<Int>) {
-        val index = numbers.intersect(other.toSet()).size
-        val value = results.get(index)?: 0
-        results.put(index, value + 1)
-    }
-
     private fun isLegalLottoNumbers(numbers: Collection<Int>): Boolean {
         if (numbers.size != 7 && numbers.toSet().size != 7) return false
         for (number in numbers) {
