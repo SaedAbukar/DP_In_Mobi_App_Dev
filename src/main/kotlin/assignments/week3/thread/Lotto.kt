@@ -54,9 +54,9 @@ fun main() {
     val guesses = 13500000
     val upTo = guesses / threadAmount
     val lotto = Lotto()
-    val threads = ( 1 .. 4).map {
+    val threads = ( 1 .. threadAmount).map {
         Thread {
-            println("Thread $it/4 starting for $upTo guesses")
+            println("Thread $it/$threadAmount starting for $upTo guesses")
             (1..upTo).forEach { _ ->
                 lotto.check(generateLottoNumbers())
             }
