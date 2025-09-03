@@ -62,5 +62,6 @@ fun main() {
     println("All joined")
     println("Running time ${end - start}ms")
     println("Checksum: ${lotto.guesses} should be $guesses")
+    println("Checksum: ${lotto.results.values.sum()} should be $guesses")
     lotto.results.forEach{ (keys, values) -> println("$keys: $values") }
 }
